@@ -880,7 +880,7 @@ function ThankYou() {
         <div className="text-center mt-10">
           <div className="text-[10px] tracking-[0.4em] uppercase text-champagne">With Compliments From</div>
           <div className="font-serif text-3xl text-olive-dark mt-8">Anas &amp; Neha</div>
-          <div className="text-brown text-xs tracking-[0.35em] mt-1 uppercase">11 · 07 · 2026</div>
+          <div className="text-brown text-xs tracking-[0.35em] mt-1 uppercase">09 · 07 · 2026</div>
         </div>
       </Fade>
     </section>
