@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
     component: Invitation,
     head: () => ({
         meta: [
-            { title: "Anas & Neha — 11 July 2026" },
+            { title: "Anas & Neha — 9 July 2026" },
             { name: "description", content: "A luxury digital wedding invitation for Muhammed Anas & Khadeeja Neha." },
         ],
     }),
