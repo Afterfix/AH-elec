@@ -787,7 +787,7 @@ function Wishes() {
   const seed = [
     { n: "Ajmal", m: "May Allah bless your union with barakah and endless joy." },
     { n: "Swaneeha", m: "Wishing you a lifetime of love and laughter." },
-    { n: "Shadil", m: "Two beautiful souls, one blessed journey. Mabrook!" },
+    { n: "Bushra", m: "Two beautiful souls, one blessed journey. Mabrook!" },
   ];
   const [wishes, setWishes] = useState(seed);
   const [n, setN] = useState(""); const [m, setM] = useState("");
