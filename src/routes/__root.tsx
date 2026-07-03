@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import logoPng from "@/assets/fav.png";
 
 function NotFoundComponent() {
   return (
@@ -77,27 +78,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Anas & Neha — A Wedding Invitation" },
-      { name: "description", content: "With the blessings of Allah, we joyfully invite you to celebrate the wedding of Muhammed Anas & Khadeeja Neha — 9, 11, 12 July 2026." },
-      { name: "author", content: "Anas & Neha" },
-      { property: "og:title", content: "Anas & Neha — A Wedding Invitation" },
-      { property: "og:description", content: "With the blessings of Allah, we joyfully invite you to celebrate the wedding of Muhammed Anas & Khadeeja Neha — 9, 11, 12 July 2026." },
+      { title: "AH Electricals & Plumbing — Malappuram | Wiring, Plumbing & Emergency Repairs" },
+      { name: "description", content: "Professional electrical and plumbing services across Malappuram. Certified technicians, 24/7 emergency support, transparent quotes and lasting workmanship." },
+      { name: "author", content: "AH Electricals & Plumbing" },
+      { name: "theme-color", content: "#0B2C5F" },
+      { property: "og:title", content: "AH Electricals & Plumbing — Powering homes. Fixing flows." },
+      { property: "og:description", content: "Reliable installation, maintenance and emergency repair services across Malappuram." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Anas & Neha — A Wedding Invitation" },
-      { name: "twitter:description", content: "With the blessings of Allah, we joyfully invite you to celebrate the wedding of Muhammed Anas & Khadeeja Neha — 9, 11, 12 July 2026." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/790cfc47-4327-44d5-a02a-f07f5bdfa8f3/id-preview-8a0d62ab--765beea1-2535-448c-b8d7-d517250e2ef8.lovable.app-1783009607959.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/790cfc47-4327-44d5-a02a-f07f5bdfa8f3/id-preview-8a0d62ab--765beea1-2535-448c-b8d7-d517250e2ef8.lovable.app-1783009607959.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "src/assets/fav.png", type: "image/x-icon" },
+      { rel: "icon", href: logoPng, type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" },
     ],
   }),
-
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
