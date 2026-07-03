@@ -142,8 +142,8 @@ function Hero() {
     <section id="home" className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img src={heroHome} alt="" width={1920} height={1280} className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/80 to-navy-deep/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/60 via-navy-deep/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/50 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-20 lg:grid-cols-[1.35fr_1fr] lg:items-center">
