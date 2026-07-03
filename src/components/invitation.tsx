@@ -384,7 +384,7 @@ function WeddingEvents() {
     {
       date: "9 July 2026",
       title: "Nikkah & Engagement",
-      time: "3:30 PM",
+      time: "4:00 PM",
       venue: "Komban Kallu Juma Masjid",
       desc: "The sacred nikkah ceremony followed by an intimate engagement gathering.",
       maps: "https://share.google/2q4nsRqKZp18iYbax",
@@ -392,7 +392,7 @@ function WeddingEvents() {
     {
       date: "11 July 2026",
       title: "Bride's Celebration",
-      time: "12:00 PM",
+      time: "11:00 AM",
       venue: "Celebration Time convention center",
       desc: "A joyful celebration hosted by the bride's family.",
       maps: "https://maps.app.goo.gl/ahzdMCNmX2wdrHkF7",
