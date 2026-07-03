@@ -24,8 +24,8 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const PHONE = "+91 85930 00097";
-const WHATSAPP = "+91 85930 00097";
+const PHONE = "+918593000097";
+const WHATSAPP = "918593000097";
 
 function HomePage() {
   return (
