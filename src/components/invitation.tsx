@@ -12,6 +12,7 @@ import groomAsset from "@/assets/groom.png";
 import collage1Asset from "@/assets/collage1.png";
 import collage2Asset from "@/assets/collage2.png";
 import couple1Asset from "@/assets/couple1.png";
+import couple1_1Asset from "@/assets/couple1_1.jpeg";
 import couple2Asset from "@/assets/couple2.png";
 import couple3Asset from "@/assets/couple3.png";
 import bgMusic from "@/assets/india_happy-oud-488103.mp3";
@@ -23,6 +24,7 @@ const IMG = {
   collage1: collage1Asset,
   collage2: collage2Asset,
   couple1: couple1Asset,
+  couple1_1: couple1_1Asset,
   couple2: couple2Asset,
   couple3: couple3Asset,
 };
@@ -280,7 +282,7 @@ function SaveTheDate() {
       <SectionTitle eyebrow="the moment" title="Save the Date" script="Together forever" />
       <Fade delay={0.1}>
         <div className="relative mx-auto max-w-sm">
-          <CurvedImage src={IMG.couple1} alt="Anas & Neha" className="aspect-[3/4] w-full" />
+          <CurvedImage src={IMG.couple1_1} alt="Anas & Neha" className="aspect-[3/4] w-full" />
           <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 glass-card rounded-full px-6 py-3 whitespace-nowrap">
             <div className="font-script text-champagne text-2xl leading-none">Neha &amp; Anas</div>
           </div>
@@ -289,7 +291,7 @@ function SaveTheDate() {
       <Fade delay={0.25}>
         <div className="mt-16 text-center">
           <div className="text-brown text-xs tracking-[0.35em] uppercase mb-2">Celebrating on</div>
-          <div className="font-serif text-3xl text-olive-dark">Saturday · 11 July 2026</div>
+          <div className="font-serif text-3xl text-olive-dark">Thursday · 9th July 2026</div>
         </div>
       </Fade>
       <Fade delay={0.35}>
@@ -314,8 +316,8 @@ function SaveTheDate() {
 
 function OurStory() {
   const items = [
-    { title: "How We Met", date: "2023", body: "Two families, one gentle introduction — and a conversation that felt like it had always existed." },
-    { title: "Engagement", date: "Winter 2025", body: "A quiet promise made in the presence of loved ones, sealed with prayer and gratitude." },
+    { title: "How We Met", date: "2025", body: "Two families, one gentle introduction — and a conversation that felt like it had always existed." },
+    { title: "Engagement", date: "2025", body: "A quiet promise made in the presence of loved ones, sealed with prayer and gratitude." },
     { title: "Nikkah", date: "9 July 2026", body: "The sacred bond by which two hearts become one under the mercy of Allah." },
     { title: "Wedding Celebration", date: "11 · 12 July 2026", body: "A gathering of family, laughter, and light — a beginning made beautiful by those we love." },
   ];
@@ -382,18 +384,18 @@ function WeddingEvents() {
     {
       date: "9 July 2026",
       title: "Nikkah & Engagement",
-      time: "10:00 AM",
-      venue: "Family Residence",
+      time: "3:30 PM",
+      venue: "Komban Kallu Juma Masjid",
       desc: "The sacred nikkah ceremony followed by an intimate engagement gathering.",
-      maps: "https://maps.google.com/?q=Kunnappally+Pattambi",
+      maps: "https://share.google/2q4nsRqKZp18iYbax",
     },
     {
       date: "11 July 2026",
       title: "Bride's Celebration",
       time: "12:00 PM",
-      venue: "Kunnappally, Pattambi – Perinthalmanna Road",
+      venue: "Celebration Time convention center",
       desc: "A joyful celebration hosted by the bride's family.",
-      maps: "https://maps.google.com/?q=Kunnappally+Pattambi+Perinthalmanna+Road",
+      maps: "https://maps.app.goo.gl/ahzdMCNmX2wdrHkF7",
     },
     {
       date: "12 July 2026",
@@ -507,11 +509,11 @@ function Venue() {
 
 function TimelineOfDay() {
   const rows = [
-    {  label: "Guest Arrival", icon: Users },
+    { label: "Guest Arrival", icon: Users },
     { label: "Welcome Drinks", icon: Utensils },
-    {  label: "Photography", icon: Camera },
-    {  label: "Dinner", icon: Utensils },
-    {  label: "Reception", icon: Heart },
+    { label: "Photography", icon: Camera },
+    { label: "Dinner", icon: Utensils },
+    { label: "Reception", icon: Heart },
   ];
   return (
     <section className="py-24 px-6">
@@ -544,7 +546,7 @@ function TimelineOfDay() {
 
 function Gallery() {
   const shots = [
-    { src: IMG.couple1, span: "row-span-2" },
+    { src: IMG.couple1_1, span: "row-span-2" },
     { src: IMG.collage1, span: "" },
     // { src: IMG.couple3, span: "" },
     { src: IMG.collage2, span: "row-span-2" },
@@ -784,8 +786,8 @@ function RSVP() {
 function Wishes() {
   const seed = [
     { n: "Ajmal", m: "May Allah bless your union with barakah and endless joy." },
-    { n: "Sameera", m: "Wishing you a lifetime of love and laughter." },
-    { n: "Rashid", m: "Two beautiful souls, one blessed journey. Mabrook!" },
+    { n: "Swaneeha", m: "Wishing you a lifetime of love and laughter." },
+    { n: "Shadil", m: "Two beautiful souls, one blessed journey. Mabrook!" },
   ];
   const [wishes, setWishes] = useState(seed);
   const [n, setN] = useState(""); const [m, setM] = useState("");
@@ -820,7 +822,7 @@ function Wishes() {
 }
 
 function PhotoCarousel() {
-  const photos = [IMG.couple1, IMG.couple2, IMG.couple3, IMG.collage1, IMG.collage2, IMG.bride, IMG.groom];
+  const photos = [IMG.couple1_1, IMG.couple2, IMG.couple3, IMG.collage1, IMG.collage2, IMG.bride, IMG.groom];
   return (
     <section className="py-24">
       <SectionTitle eyebrow="the album" title="Photo Memories" script="Snapshots" />
@@ -942,7 +944,7 @@ export default function Invitation() {
   useEffect(() => {
     if (audioRef.current) {
       if (!muted) {
-        audioRef.current.play().catch(() => {});
+        audioRef.current.play().catch(() => { });
       } else {
         audioRef.current.pause();
       }
