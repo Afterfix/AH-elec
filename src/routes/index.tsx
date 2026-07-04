@@ -73,11 +73,10 @@ function Navbar() {
   }, []);
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-background/85 backdrop-blur-lg border-b border-border shadow-[0_4px_20px_-12px_rgba(11,44,95,0.25)]"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#home" className="flex items-center gap-2.5 group">
@@ -92,9 +91,8 @@ function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform ${
-                scrolled ? "text-foreground/80 hover:text-accent" : "text-white/90 hover:text-white"
-              }`}
+              className={`text-sm font-medium transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform ${scrolled ? "text-foreground/80 hover:text-accent" : "text-white/90 hover:text-white"
+                }`}
             >
               {l.label}
             </a>
@@ -741,7 +739,7 @@ function Contact() {
             {[
               { icon: Phone, label: "Phone", value: "+91 85930 00097", href: `tel:${PHONE}` },
               { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: `https://wa.me/${WHATSAPP}` },
-              { icon: Mail, label: "Email", value: "hello@ahelectricals.in", href: "mailto:hello@ahelectricals.in" },
+              { icon: Mail, label: "Email", value: "ahelectricalplumbing@gmail.com", href: "mailto:ahelectricalplumbing@gmail.com" },
               { icon: MapPin, label: "Location", value: "Malappuram, Kerala", href: "#" },
               { icon: Clock, label: "Working Hours", value: "Mon – Sun · 24/7 emergency", href: "#" },
             ].map((c) => (
@@ -828,7 +826,7 @@ function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><a href={`tel:${PHONE}`} className="hover:text-gold">+91 85930 00097</a></li>
             <li><a href={`https://wa.me/${WHATSAPP}`} className="hover:text-gold">WhatsApp</a></li>
-            <li><a href="mailto:hello@ahelectricals.in" className="hover:text-gold">hello@ahelectricals.in</a></li>
+            <li><a href="mailto:ahelectricalplumbing@gmail.com" className="hover:text-gold">ahelectricalplumbing@gmail.com</a></li>
             <li>Malappuram, Kerala</li>
           </ul>
         </div>
@@ -858,6 +856,13 @@ function FooterCol({ title, links }: { title: string; links: { label: string; hr
 function FloatingActions() {
   return (
     <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
+      <a
+        href="mailto:ahelectricalplumbing@gmail.com"
+        aria-label="Email"
+        className="grid h-14 w-14 place-items-center rounded-full bg-red-600 text-white shadow-elegant transition hover:scale-105 floaty md:hidden"
+      >
+        <Mail className="h-6 w-6" />
+      </a>
       <a
         href={`https://wa.me/${WHATSAPP}`}
         aria-label="WhatsApp"
